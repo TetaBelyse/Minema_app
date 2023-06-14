@@ -1,9 +1,10 @@
 import Home from "../pages/Home";
+import Login from "../pages/Login";
 import Page1 from "../pages/Page1";
 import Page2 from "../pages/Page2";
 import Page3 from "../pages/Page3";
 
-const sidebarItems = [
+const navItems = [
     {
         id: 'home',
         name: 'home',
@@ -27,7 +28,13 @@ const sidebarItems = [
         name: 'page3',
         path: '/page3',
         element: <Page3/>
+    },
+    {
+        id: 'login',
+        name: 'login',
+        path: '/login',
+        element: <Login/>
     }
 ]
 
-export default sidebarItems
+export default navItems

@@ -6,7 +6,7 @@ const MenuItem = ({ title, path }) => {
     const location = useLocation()
 
     return (
-        <div onClick={() => navidate(path)} className={`cursor-pointer decoration-4 text-sm decoration-amber-400 hover:underline underline-offset-4 ${path == location.pathname ? 'underline' : ''}`}>{title}</div>
+        <div onClick={() => navidate(path)} className={`cursor-pointer decoration-4 text-sm decoration-amber-400 hover:text-amber-100 hover:underline underline-offset-4 ${path == location.pathname ? 'underline text-amber-100' : ''}`}>{title}</div>
     )
 }
 
@@ -25,7 +25,7 @@ const BaseLayout = ({ children }) => {
                         <MenuItem title={'Page2'} path={'/page2'} />
                         <MenuItem title={'Page3'} path={'/page3'} />
                     </div>
-                    <div className="bg-white rounded-full p-2 px-8 font-semibold text-sm text-amber-700 cursor-pointer">Login</div>
+                    <div onClick={()=> navidate('/login')} className="bg-white hover:bg-amber-200 rounded-md p-2 px-8 font-semibold text-sm text-amber-700 cursor-pointer">Login</div>
                 </div>
             </nav>
             <div className="w-full text-center text-white">{children}</div>

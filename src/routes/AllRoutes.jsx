@@ -3,14 +3,14 @@ import Page1 from "../pages/Page1"
 import Page2 from "../pages/Page2"
 import Page3 from "../pages/Page3"
 import Home from "../pages/Home"
-import sidebarItems from "../utils/sidebarItems"
+import navItems from "../utils/navItems"
 
 const AllRoutes = () => {
     return (
         <Routes>
 
             {
-                sidebarItems.map( item => (<Route key={item.id} path={item.path} element={item.element} />))
+                navItems.map( item => (<Route key={item.id} path={item.path} element={item.element} />))
             }
         </Routes>
     )
