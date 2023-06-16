@@ -3,7 +3,7 @@ import BaseLayout from "../layout/BaseLayout"
 const Hailstorms = () => {
   return (
     <BaseLayout>
-        <div>Home</div>
+        <div>page4</div>
     </BaseLayout>
   )
 }

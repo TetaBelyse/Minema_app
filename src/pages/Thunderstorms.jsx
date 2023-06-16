@@ -1,12 +1,11 @@
 import BaseLayout from "../layout/BaseLayout"
 
-const Page1 = () => {
+const Thunderstorms = () => {
     return (
         <BaseLayout>
-            <div>Page 1</div>
-            
+            <div>Page 3</div>
         </BaseLayout>
     )
 }
 
-export default Page1
+export default Thunderstorms

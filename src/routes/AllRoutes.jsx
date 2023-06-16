@@ -1,19 +1,19 @@
-import { Route, Routes } from "react-router-dom"
-import Page1 from "../pages/Page1"
-import Page2 from "../pages/Page2"
-import Page3 from "../pages/Page3"
-import Home from "../pages/Home"
-import sidebarItems from "../utils/sidebarItems"
+import { Route, Routes } from "react-router-dom";
+import sidebarItems from "../utils/sidebarItems";
+import SignIn from "../Authentications/SignIn"
+
 
 const AllRoutes = () => {
-    return (
-        <Routes>
+  return (
+    <Routes>
+      {sidebarItems.map((item) => (
+        <Route key={item.id} path={item.path} element={item.element} />
+      ))}
+      <Route
+        path='/signIn'
+        element={< SignIn />} />
+    </Routes>
+  );
+};
 
-            {
-                sidebarItems.map( item => (<Route key={item.id} path={item.path} element={item.element} />))
-            }
-        </Routes>
-    )
-}
-
-export default AllRoutes
+export default AllRoutes;

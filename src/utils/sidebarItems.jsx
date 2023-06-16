@@ -1,33 +1,49 @@
-import Home from "../pages/Home";
-import Page1 from "../pages/Page1";
-import Page2 from "../pages/Page2";
-import Page3 from "../pages/Page3";
+import Desinventor from "../pages/Desinventor";
+import Landslides from "../pages/Landslides";
+import Rainstorms from "../pages/Rainstorms";
+import Windstorms from "../pages/Windstorms";
+import Hailstorms from "../pages/Hailstorms";
+import Thunderstorms from "../pages/Thunderstorms";
+
 
 const sidebarItems = [
-    {
-        id: 'home',
-        name: 'home',
-        path: '/',
-        element: <Home/>
-    },
-    {
-        id: 'page1',
-        name: 'page1',
-        path: '/page1',
-        element: <Page1/>
-    },
-    {
-        id: 'page2',
-        name: 'page2',
-        path: '/page2',
-        element: <Page2/>
-    },
-    {
-        id: 'page3',
-        name: 'page3',
-        path: '/page3',
-        element: <Page3/>
-    }
-]
 
-export default sidebarItems
+  {
+    id: "desinventor",
+    name: "desinventor",
+    path: "/desinventor",
+    element: <Desinventor />,
+  },
+  {
+    id: "landslides",
+    name: "landslides",
+    path: "/landslides",
+    element: <Landslides />,
+  },
+  {
+    id: "rainstorms",
+    name: "rainstorms",
+    path: "/rainstorms",
+    element: <Rainstorms />,
+  },
+  {
+    id: "windstorms",
+    name: "windstorms",
+    path: "/windstorms",
+    element: <Windstorms />,
+  },
+  {
+    id: "hailstorms",
+    name: "hailstorms",
+    path: "/hailstorms",
+    element: <Hailstorms />,
+  },
+  {
+    id: "thunderstorms",
+    name: "thunderstorms",
+    path: "/thunderstorms",
+    element: <Thunderstorms />,
+  },
+];
+
+export default sidebarItems;
