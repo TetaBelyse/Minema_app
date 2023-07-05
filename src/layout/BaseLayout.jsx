@@ -22,8 +22,7 @@ const BaseLayout = ({ children }) => {
                 <img className="h-12 W-8" src={logo} alt="logo" />
                 </div>
                 <div className="flex gap-10">
-                    <div className="flex gap-6 items-center uppercase">
-                   
+                    <div className="flex gap-6 items-center uppercase"> 
                         <MenuItem title={'desinventor'} path={'/desinventor'} />
                         <MenuItem title={'landslides'} path={'/landslides'} />
                         <MenuItem title={'rainstorms'} path={'/rainstorms'} />

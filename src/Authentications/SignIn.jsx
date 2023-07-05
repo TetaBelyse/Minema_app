@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import logo from "../assets/logo.png";
@@ -52,9 +52,13 @@ const SignIn = () => {
       });
   };
 
+  const [show, setShow] = useState(false);
+  const handleShow = () => {
+    setShow(!show);
+  };
+
   return (
     <>
-      {/* gfhujghjg */}
       <section className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
@@ -81,7 +85,7 @@ const SignIn = () => {
                   <input
                     ref={usernameRef}
                     type="text"
-                    id="exampleFormControlInput1"
+                    id="FormControlInput1"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Enter your username"
                     required=""
@@ -96,12 +100,17 @@ const SignIn = () => {
                   </label>
                   <input
                     ref={passwordRef}
-                    type="password"
-                    id="exampleFormControlInput1"
+                    type={show ? "text" : "password"}
+                    autoComplete="current-password"
+                    id="FormControlInput2"
                     placeholder="••••••••"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     required=""
                   />
+                  <label onClick={handleShow}>
+                    <input type="checkbox" />
+                    Show Password
+                  </label>
                 </div>
 
                 <button
