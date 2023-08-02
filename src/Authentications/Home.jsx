@@ -16,21 +16,21 @@ const Home = () => {
             <div>
               <ul className="flex space-x-4">
                 <li>
-                  <a href="/" className="text-white hover:text-gray-200">
+                  <a href="/" className="text-white hover:text-gray-500">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/about" className="text-white hover:text-gray-200">
+                  <a href="/about" className="text-white hover:text-gray-500">
                     About
                   </a>
                 </li>
                 <li>
                   <a
                     href="/services"
-                    className="text-white hover:text-gray-200"
+                    className="text-white hover:text-gray-500"
                   >
-                    Services
+                    warning Messages
                   </a>
                 </li>
                 <li>
@@ -46,21 +46,75 @@ const Home = () => {
           </div>
         </nav>
 
-        <section className="flex-1 flex items-center justify-center bg-[conic-gradient(at_bottom,_var(--tw-gradient-stops))] from-white via-sky-500 to-sky-500">
-          <div className="max-w-xl">
-            <h1 className="text-4xl font-bold mb-4">Disaster Awareness</h1>
-            <p className="text-gray-700 text-lg text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
-              leo ac tellus bibendum lacinia. Vestibulum id arcu ac ligula
-              elementum interdum vel ac nunc. Mauris aliquet enim in neque
-              auctor, ac ullamcorper ex consequat. Curabitur et semper turpis,
-              sit amet sollicitudin massa. Quisque maximus metus a est
-              consectetur consequat. Donec gravida, urna vel dapibus vulputate,
-              lorem magna condimentum neque, sit amet varius est justo sit amet
-              eros.
-            </p>
-          </div>
-        </section>
+        <main>
+          <section className="flex-1 flex items-center justify-center bg-[conic-gradient(at_bottom,_var(--tw-gradient-stops))] from-white via-slate-300 to-slate-300">
+            <div className="max-w-7xl">
+              <div className="flex items-center justify-center">
+              <h1 className="border-solid border-1 border-slate-900 bg-slate-700 text-3xl font-bold text-white text-center px-3  m-4">
+                Disaster risk reduction and recovery
+              </h1>
+              </div>
+              <div className=" h-96 w-full relative">
+                <img
+                  src="https://static.dw.com/image/65511709_1006.jpg"
+                  className="w-full h-full object-cover absolute "
+                />
+              </div>
+              <p className="text-gray-900 text-lg text-center m-4 p-6">
+                Disasters can be caused by many different kinds of hazards and
+                can have devastating impacts on people and communities. The
+                frequency, complexity and severity of their impacts are likely
+                to increase in the future due to factors such as climate change,
+                landslides, windstorms, thunderstorm, hailstorms and rainstorms,
+                But disasters can and should be prevented. We can prevent
+                hazards from becoming disasters by helping communities to be
+                prepared, reduce their risks, and become more resilient.
+              </p>
+            </div>
+          </section>
+          <section className="w-auto m-5 ">
+            <div className="">
+              <div className="flex items-center justify-center ">
+              <h1 className=" border-solid border-1 border-slate-900 bg-slate-700 text-3xl font-bold text-white text-center px-3  m-4">
+                Disasters in Rwanda
+              </h1>
+              </div>
+              <div
+                style={{ height: "85vh" }}
+                className="col-span-1 overflow-scroll h-full"
+              >
+                <iframe
+                  title="Dashboard"
+                  width="100%"
+                  height="100%"
+                  allowFullScreen
+                  src={`https://esri-rw.maps.arcgis.com/apps/dashboards/11eafd200f994288934a523c41e4ceaa`}
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <section className=" w-auto m-5 ">
+            <div className="">
+              <div className="flex items-center justify-center ">
+              <h1 className=" border-solid border-1 border-slate-900 bg-slate-700 text-3xl font-bold text-white text-center px-3  m-4">
+              Disaster Occurrence in Rwanda on Map
+              </h1>
+              </div>
+              <div
+                style={{ height: "85vh" }}
+                className="col-span-1 overflow-scroll h-full"
+              >
+                <iframe
+                  title="Dashboard"
+                  width="100%"
+                  height="100%"
+                  allowFullScreen
+                  src={`https://esri-rw.maps.arcgis.com/apps/dashboards/786be13650154ef3a5ab7f47dc2bd783`}
+                ></iframe>
+              </div>
+            </div>
+          </section>
+        </main>
 
         <footer className="bg-gradient-to-r from-green-200 via-green-400 to-green-500 py-4">
           <div className="container mx-auto text-center">
