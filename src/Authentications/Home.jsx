@@ -27,7 +27,7 @@ const Home = () => {
                 </li>
                 <li>
                   <a
-                    href="/services"
+                    href="/Message"
                     className="text-white hover:text-gray-500"
                   >
                     Warning Messages
