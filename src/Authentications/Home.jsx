@@ -30,7 +30,7 @@ const Home = () => {
                     href="/services"
                     className="text-white hover:text-gray-500"
                   >
-                    warning Messages
+                    Warning Messages
                   </a>
                 </li>
                 <li>
@@ -38,7 +38,7 @@ const Home = () => {
                     href="/signin"
                     className="bg-white rounded-full p-2 px-8 font-bold text-xs text-slate-700 cursor-pointer tracking-tight hover:tracking-wide"
                   >
-                    SignIn
+                    Login
                   </a>
                 </li>
               </ul>
