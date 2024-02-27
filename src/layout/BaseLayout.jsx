@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom"
 import logo from "./../assets/logo.png"
 
 
+// eslint-disable-next-line react/prop-types
 const MenuItem = ({ title, path }) => {
     const navigate = useNavigate()
     const location = useLocation()
@@ -11,6 +12,7 @@ const MenuItem = ({ title, path }) => {
     )
 }
 
+// eslint-disable-next-line react/prop-types
 const BaseLayout = ({ children }) => {
 
     const navigate = useNavigate()
